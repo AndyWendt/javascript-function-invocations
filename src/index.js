@@ -7,15 +7,26 @@ function functionInvocationThisReturn() {
 }
 
 describe("Function Invocation", function() {
-    it("It can be called as a function", function() {
+    it("can be called as a function", function() {
         expect(functionInvocation()).toBe('function invocation');
     });
 
-    it("It is attached to the window object and thus global", function() {
+    it("is attached to the window object and thus global", function() {
         expect(window.functionInvocation()).toBe('function invocation');
     });
 
-    it("It's 'this' equals the window object", function() {
+    it("'this' equals the window object", function() {
+        // in strict mode this would be undefined
         expect(functionInvocationThisReturn()).toBe(window);
     });
+
+    (function () {
+        "use strict";
+        var that = this;
+
+        it("`this` is undefined since function was not called as a method in strict mode", function() {
+            // see here for an explanation: http://stackoverflow.com/questions/9822561/why-is-this-in-an-anonymous-function-undefined-when-using-strict
+            expect(that).toBe(undefined);
+        });
+    })();
 });
