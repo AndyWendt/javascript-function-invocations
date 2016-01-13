@@ -1,4 +1,4 @@
-describe("Function Invocation", function() {
+describe("Method Invocation", function() {
 
     var obj = {
        run: methodToInvoke
