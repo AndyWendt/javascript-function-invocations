@@ -1,8 +1,8 @@
 describe("Constructor Invocation", function() {
-    var obj = new BaseObj();
-    var obj1 = new BaseObj();
+    var obj = new BaseConstructor();
+    var obj1 = new BaseConstructor();
 
-    function BaseObj () {
+    function BaseConstructor () {
         this.run = function () { return this; };
     }
 
