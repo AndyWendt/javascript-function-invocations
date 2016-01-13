@@ -6,11 +6,16 @@
   "dependencies": {
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-requirejs": "^0.2.3",
+    "requirejs": "^2.1.22"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
