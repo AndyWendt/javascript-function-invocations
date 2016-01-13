@@ -1,0 +1,25 @@
+{
+  "name": "javascript-function-invocations",
+  "version": "1.0.0",
+  "description": "Javascript Function Invocation Examples",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-jasmine": "^0.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyWendt/javascript-function-invocations.git"
+  },
+  "author": "Andy Wendt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyWendt/javascript-function-invocations/issues"
+  },
+  "homepage": "https://github.com/AndyWendt/javascript-function-invocations#readme"
+}
